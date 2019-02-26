@@ -1,3 +1,35 @@
+### 0.22.2 - Feb 24 2019
+
+Improvements:
+* Reduce plugin size by correctly pruning down to production dependencies in client and server packages
+* Upgrade required VSCode engine to `^1.30.0`
+
+Bug Fixes:
+* Implement more robust ENV variable processing
+* Call default shell directly instead of via `/usr/bin/env` to be more POSIX compliant. Resolves [#433](https://github.com/rubyide/vscode-ruby/issues/433)
+* Fix a few selection formatting bugs. Resolves [#434](https://github.com/rubyide/vscode-ruby/issues/434)
+* Gracefully handle unsupported linters in settings. Resolves [#437](https://github.com/rubyide/vscode-ruby/issues/437)
+
+### 0.22.1 - Feb 21 2019
+
+Bug Fixes:
+* Set archive files to ignored so they don't get published
+* Whitelist the `HOME` environment variable in the environment detection
+* Fix for opening single files and not having the language server crash
+
+### 0.22.0 - Feb 20 2019
+
+Notable Changes:
+* [Multi-root support, lint support, DocumentSymbol support, and more!](https://github.com/rubyide/vscode-ruby/pull/405) by [wingrunr21](https://github.com/wingrunr21)
+
+### 0.21.1 - Feb 12 2019
+
+Bug Fixes:
+* Upgrade `tree-sitter` and `tree-sitter-ruby` to versions compatible with Node ABI v64
+
+Improvements:
+* [Update settings panel title](https://github.com/rubyide/vscode-ruby/pull/419) by [vnbrs](https://github.com/vnbrs)
+
 ### 0.21.0 - Dec 9 2018
 
 Notable Changes:
